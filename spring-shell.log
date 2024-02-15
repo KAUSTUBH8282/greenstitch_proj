@@ -1,0 +1,11 @@
+1708010970736:help
+1708011014524:create-parking-lot 8 4
+1708011073450:get-available-slots-for-parking-lot 8
+1708011205179:get-available-slots-for-parking-lot 4
+1708011592367:exit
+1708012331551:ep
+1708012346010:hh
+1708012363277:lephp
+1708012448975:help
+1708012496778:create-parking-lot 2
+1708013228698:park-car --parkingLotId 6 --registrationNumber "ABC1234" --color "Blue"

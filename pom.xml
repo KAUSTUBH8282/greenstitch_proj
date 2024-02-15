@@ -183,17 +183,13 @@
 		</dependency>
 
 
+		
+		
 		<dependency>
-			<groupId>org.apache.solr</groupId>
-			<artifactId>solr-solrj</artifactId>
-			<version>8.1.0</version>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.apache.solr/solr-core -->
-		<dependency>
-			<groupId>org.apache.solr</groupId>
-			<artifactId>solr-core</artifactId>
-			<version>8.2.0</version>
-		</dependency>
+          <groupId>org.springframework.shell</groupId>
+          <artifactId>spring-shell-starter</artifactId>
+          <version>3.2.1</version> <!-- Use the latest version -->
+        </dependency>
 		
 		
 		<!-- <dependency> <groupId>org.springframework.cloud</groupId> <artifactId>spring-cloud-starter-circuitbreaker-resilience4j</artifactId> 

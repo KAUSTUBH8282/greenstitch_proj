@@ -74,11 +74,14 @@ public class ParkingSlotController {
     }
     
     @PostMapping("/add-slots")
-    public ResponseEntity<?> addParkingSlots(@RequestParam Long parkingLotId,
-                                             @RequestParam int numberOfSlots)
-    {
-        parkingSlotService.addParkingSlots(parkingLotId, numberOfSlots);
-        return ResponseEntity.ok("Added " + numberOfSlots + " slots to parking lot " + parkingLotId);
+    public ResponseEntity<?> addParkingSlots(@RequestParam int numberOfSlots) {
+        try {
+            Long parkingLotId = parkingSlotService.addParkingSlots(numberOfSlots);
+            return ResponseEntity.ok("Added " + numberOfSlots + " slots to new parking lot with ID " + parkingLotId);
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST)
+                                 .body("Failed to add parking slots. " + e.getMessage());
+        }
     }
 
     @PostMapping("/delete")
