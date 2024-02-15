@@ -1,4 +1,4 @@
-package entities;
+package com.example.parkinglotsystem.entities;
 
 import jakarta.persistence.*;
 import java.util.List;
